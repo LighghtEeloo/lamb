@@ -1,0 +1,6 @@
+\x.x x;
+\x.\y.x x y;
+(\cond.\a.\b.(cond a b)) (\x.\y.x) a b;
+\if.\t.\f.(
+  if t p q
+) (\cond.\a.\b.(cond a b)) (\x.\y.x) (\x.\y.y);
