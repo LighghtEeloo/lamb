@@ -1,15 +1,6 @@
-x;
-\x.x x;
-
-
-\x.\y.x x y;
-
-(\cond.\a.\b.(cond a b)) (\x.\y.x) a b;
-
-\if.\t.\f.(
-  if t x y
+\if.\true.\false.(
+  if true x y
 ) (\cond.\a.\b.(cond a b)) (\a.\b.a) (\a.\b.b);
-
 
 \add.\s.\z.(
   add s z (\s.\z.(s (s (s z)))) (\s.\z.(s (s z)))
@@ -22,4 +13,3 @@ x;
 ) (
   \s.\z.\a.\b.(b (\q.(a s q)) z)
 ) s z;
-
